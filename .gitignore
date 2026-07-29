@@ -1,0 +1,8 @@
+bin/
+obj/
+
+# Built DLL, published to the releases page rather than tracked here.
+release/
+
+# Game and loader assemblies, copied in by hand. Not redistributable.
+libs/

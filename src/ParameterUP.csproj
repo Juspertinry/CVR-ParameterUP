@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>netstandard2.1</TargetFramework>
+        <Nullable>enable</Nullable>
+        <LangVersion>12</LangVersion>
+        <AssemblyName>ParameterUP</AssemblyName>
+        <RootNamespace>ParameterUP</RootNamespace>
+        <AssemblyVersion>1.0.0</AssemblyVersion>
+        <DebugSymbols>true</DebugSymbols>
+        <DebugType>embedded</DebugType>
+    </PropertyGroup>
+
+    <!-- All references are copied into ../libs so the build never touches the game install. -->
+    <ItemGroup>
+        <Reference Include="0Harmony"><HintPath>..\libs\0Harmony.dll</HintPath><Private>false</Private></Reference>
+        <Reference Include="MelonLoader"><HintPath>..\libs\MelonLoader.dll</HintPath><Private>false</Private></Reference>
+        <Reference Include="Assembly-CSharp"><HintPath>..\libs\Assembly-CSharp.dll</HintPath><Private>false</Private></Reference>
+        <Reference Include="UnityEngine"><HintPath>..\libs\UnityEngine.dll</HintPath><Private>false</Private></Reference>
+        <Reference Include="DarkRift"><HintPath>..\libs\DarkRift.dll</HintPath><Private>false</Private></Reference>
+        <Reference Include="BTKUILib"><HintPath>..\libs\BTKUILib.dll</HintPath><Private>false</Private></Reference>
+        <Reference Include="UnityEngine.CoreModule"><HintPath>..\libs\UnityEngine.CoreModule.dll</HintPath><Private>false</Private></Reference>
+    </ItemGroup>
+
+    <ItemGroup>
+        <EmbeddedResource Include="ParameterUPMenu.png" />
+    </ItemGroup>
+
+</Project>
